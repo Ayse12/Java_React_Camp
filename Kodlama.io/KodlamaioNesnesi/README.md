@@ -1,7 +1,7 @@
 # 2. GÜN - ÖDEV 1
-->Kodlama.io sitesine gidildi ve özellik nesnesi olarak sitede tanımlanmış  iki örneğe ait class, contructor yapılarını oluşturup diziye eklenip listelendi.
+- Kodlama.io sitesine gidildi ve özellik nesnesi olarak sitede tanımlanmış  iki örneğe ait class, contructor yapılarını oluşturup diziye eklenip listelendi.
 
-->İş sınıfı olarak tanımlanılmış bir class oluşturuldu. En az iki metot yazıldı ve main içerisinde çağrıldı.
+- İş sınıfı olarak tanımlanılmış bir class oluşturuldu. En az iki metot yazıldı ve main içerisinde çağrıldı.
 ## Output
 
 ```java
