@@ -3,29 +3,29 @@ package oopIntro;
 public class Main {
 
 	public static void main(String[] args) {
-		Product product1=new Product(1,"HP",15000,"16 GB Ram");
-		product1.id=1;
-		product1.name="HP";
-		product1.unitPrice=15000;
-		product1.detail="16 GB Ram";
+		Product product1=new Product(1,"HP",15000,"16 GB Ram",10);
+		product1.setId(1);
+		product1.setName("HP");
+		product1.setUnitPrice(15000);
+		product1.setDetail("16 GB Ram");
 		
 		Product product2=new Product();
-		product2.id=2;
-		product2.name="Dell";
-		product2.unitPrice=16000;
-		product2.detail="32 GB Ram";
+		product2.setId(2);
+		product2.setName("Dell");;
+		product2.setUnitPrice(16000);;
+		product2.setDetail("32 GB Ram");;
 		
 		Product product3=new Product();
-		product3.id=3;
-		product3.name="ASUS";
-		product3.unitPrice=30000;
-		product3.detail="64 GB Ram";
+		product3.setId(3);
+		product3.setName("ASUS");;
+		product3.setUnitPrice(30000);;
+		product3.setDetail("64 GB Ram");
 		
 		Product[] products= {product1,product2,product3};
 		
 		System.out.println("-------For ile dizi içinde gezinme-------");
 		for(Product product:products) {
-			System.out.println(product.name);
+			System.out.println(product.getName());
 		}
 		System.out.println(" ");
 		
@@ -34,22 +34,28 @@ public class Main {
 		System.out.println(products.length);
 		System.out.println(" ");
 		
+		System.out.println(product1.getUnitPriceAfterDiscount());
 		
 		
-		//Category oluþturma
-		Category category1=new Category();
-		category1.id=1;
-		category1.name="Bilgisayar";
-		
-		Category category2=new Category();
-		category2.id=1;
-		category2.name="Bilgisayar";
 		
 		//ProductManager
 		ProductManager productManager=new ProductManager();
 		productManager.addToCart(product1);
 		productManager.addToCart(product2);
 		productManager.addToCart(product3);
+		
+		
 	}
+	 private static void CategoryTest() {
+		//Category oluþturma
+			Category category1=new Category();
+			category1.id=1;
+			category1.name="Bilgisayar";
+					
+			Category category2=new Category();
+			category2.id=1;
+			category2.name="Bilgisayar";
+	 }
+	
 
 }
