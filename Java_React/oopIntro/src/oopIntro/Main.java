@@ -3,6 +3,14 @@ package oopIntro;
 public class Main {
 
 	public static void main(String[] args) {
+		//GetSetProductTest();
+		CategoryTest();
+		
+		
+		
+		
+	}
+	private static void GetSetProductTest() {
 		Product product1=new Product(1,"HP",15000,"16 GB Ram",10);
 		product1.setId(1);
 		product1.setName("HP");
@@ -36,25 +44,26 @@ public class Main {
 		
 		System.out.println(product1.getUnitPriceAfterDiscount());
 		
-		
-		
 		//ProductManager
 		ProductManager productManager=new ProductManager();
 		productManager.addToCart(product1);
 		productManager.addToCart(product2);
 		productManager.addToCart(product3);
-		
+				
 		
 	}
-	 private static void CategoryTest() {
+	
+	private static void CategoryTest() {
 		//Category oluþturma
 			Category category1=new Category();
-			category1.id=1;
-			category1.name="Bilgisayar";
+			category1.setId(1);
+			category1.setName("Bilgisayar");
 					
 			Category category2=new Category();
-			category2.id=1;
-			category2.name="Bilgisayar";
+			category2.setId(2);
+			category2.setName("Laptop");
+			System.out.println(category1.getName());
+			System.out.println(category2.getName());
 	 }
 	
 
