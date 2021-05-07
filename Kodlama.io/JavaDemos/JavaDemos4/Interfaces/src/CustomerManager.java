@@ -1,0 +1,14 @@
+
+public class CustomerManager {
+	
+	private ICustomerDal customerDal;
+	
+	public CustomerManager(ICustomerDal ýCustomerDal) {
+		this.customerDal = ýCustomerDal;
+	}
+
+	public void add() {
+		//Ýþ Kodlarý
+		customerDal.Add();
+	}
+}
