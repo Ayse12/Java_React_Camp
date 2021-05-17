@@ -20,6 +20,22 @@ public class StarbucksCustomerManager extends BaseCustomerManager{
 		}
 	}
 	
+	@Override
+	public void add(Customer customer) {
+
+		Result result =  CheckServiceUtils.runCheckServices(new Result[] {
+				customerCheckService.CheckIfRealPerson(customer), 
+				customerCheckService.CheckIfYoungerAgeThan(customer, 15)
+				});
+		
+		if(!result.isSuccess()) {
+			System.out.println(result.getMessage());
+			return;
+		}
+		
+		super.add(customer);
+	}
+	
 	public StarbucksCustomerManager(ICustomerCheckService customerCheckService) {
 		
 		this.customerCheckService = customerCheckService;

@@ -8,9 +8,9 @@ public class Customer {
 	private int Id;
 	private String Name;
 	private String Surname;
-	private GregorianCalendar DateofBirth;
+	private Date DateofBirth;
 	private String NationaltyId;
-	public Customer(int id, String name, String surname, GregorianCalendar dateofBirth, String nationaltyId) {
+	public Customer(int id, String name, String surname, Date dateofBirth, String nationaltyId) {
 		super();
 		Id = id;
 		Name = name;
@@ -36,10 +36,10 @@ public class Customer {
 	public void setSurname(String surname) {
 		Surname = surname;
 	}
-	public GregorianCalendar getDateofBirth() {
+	public Date getDateofBirth() {
 		return DateofBirth;
 	}
-	public void setDateofBirth(GregorianCalendar dateofBirth) {
+	public void setDateofBirth(Date dateofBirth) {
 		DateofBirth = dateofBirth;
 	}
 	public String getNationaltyId() {
